@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <section id="select">
+      <div class="div-1">
+        <a href="info.html"><h3>1</h3></a>
+        <div>
+          <span>Step 1</span>
+          <p>Your info</p>
+        </div>
+      </div>
+
+      <div class="div-1">
+        <a href="plan.html"><h3>2</h3></a>
+        <div>
+          <span>Step 2</span>
+          <p>select plan</p>
+        </div>
+      </div>
+
+      <div class="div-1">
+        <a href="addon.html"><h3 class="active">3</h3></a>
+        <div>
+          <span>Step 3</span>
+          <p>add-ons</p>
+        </div>
+      </div>
+
+      <div class="div-1">
+        <a href="summary.html"><h3>4</h3></a>
+        <div>
+          <span>Step 4</span>
+          <p>summary</p>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="add-on">
+      <h1>Pick add-ons</h1>
+      <p class="first-para">Add-ons help enhance your gaming experience.</p>
+
+      <div class="checkbox-div">
+        <input type="checkbox" name="" id="check-input">
+        <div>
+            <h2> Online service</h2>
+            <p>Access to multiplayer games</p>
+        </div>
+        <p class="price">+$1/mo</p>
+        <p class="price sec-price">+$10/mo</p>
+      </div>
+
+      <div class="checkbox-div">
+        <input type="checkbox" name="" id="check-input">
+        <div>
+            <h2> Larger storage</h2>
+            <p>Extra 1TB of cloud save</p>
+        </div>
+        <p class="price">+$2/mo</p>
+        <p class="price sec-price">+$20/mo</p>
+      </div>
+
+      <div class="checkbox-div">
+        <input type="checkbox" name="" id="check-input">
+        <div>
+            <h2>Customizable Profile</h2>
+            <p>A Custom theme on your profile</p>
+        </div>
+        <p class="price">+$2/mo</p>
+        <p class="price sec-price">+$20/mo</p>
+      </div>
+
+      <div class="confirmation">
+        <a href="plan.html">go back</a>
+        <button class="add-on-btn" onclick="window.location.href='summary.html';">Next Step</button>
+      </div>
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aziken Precious</a>.
+  </div>
+</body>
+</html>
